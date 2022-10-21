@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Шпаргалки по Java</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div class="container">
+	<nav class="navbar sticky-top navbar-light bg-light top-navbar">
+		<a class="navbar-brand" href="index.html">Установка Java</a>
+		<a class="navbar-brand" href="compile.html">Компиляция</a>
+		<a class="navbar-brand" href="datatypes.html">Типы данных</a>
+		<a class="navbar-brand" href="collections.html">Коллекции</a>
+	</nav>
+
+	<div class="content col-12">
+		<div class="card">
+			<h2 class="card-title">Примитивные типы</h2>
+			<div class="card-body">
+				<h4 class="card-title">Целочисленные</h4>
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item">byte - 8 бит: от -128 до 127</li>
+					<li class="list-group-item">short - 16 бит: от -32768 до 32767</li>
+					<li class="list-group-item">char - 16 бит: беззнаковое целое число, представляющее собой символ
+						UTF-16 (буквы и цифры)
+					</li>
+					<li class="list-group-item">int - 32 бит: от -2147483648 до 2147483647</li>
+					<li class="list-group-item">long - 64 бит: от -9223372036854775808L до 9223372036854775807L</li>
+				</ul>
+			</div>
+			<div class="card-body">
+				<h4 class="card-title">Типы с плавающей точкой</h4>
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item">float - 32 бит: от 1.4e-45f до 3.4e+38f</li>
+					<li class="list-group-item">double - 64 бит: от 4.9e-324 до 1.7e+308</li>
+				</ul>
+			</div>
+			<div class="card-body">
+				<h4 class="card-title">Логический тип</h4>
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item">boolean - 8 в массивах, вне массивов - 32 (int): true/false</li>
+				</ul>
+			</div>
+		</div>
+		<div class="card">
+			<h2 class="card-title">Ссылочные типы </h2>
+			<div class="card-body">
+				<h4 class="card-title">Строки</h4>
+				<p>Строки - это объекты класса String, они очень распространены, поэтому в некоторых случаях обрабатываются отлично от всех остальных объектов. Строковые литералы записываются в двойных кавычках.</p>
+			</div>
+			<div class="card-body">
+				<h4 class="card-title">Обертки</h4>
+				<p>Если требуется создать ссылку на один из примитивных типов данных, необходимо использовать соответствующий класс-обертку. Также в таких классах есть некоторые полезные методы и константы, например минимальное значение типа int можно узнать использовав константу Integer.MIN_VALUE. Оборачивание примитива в объект называется упаковкой (boxing), а обратный процесс распаковкой (unboxing).</p>
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item">byte - Byte</li>
+					<li class="list-group-item">short - Short</li>
+					<li class="list-group-item">int - Integer</li>
+					<li class="list-group-item">long - Long</li>
+					<li class="list-group-item">char - Character</li>
+					<li class="list-group-item">float - Float</li>
+					<li class="list-group-item">double - Double</li>
+					<li class="list-group-item">boolean - Boolean</li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+
+	<nav class="navbar sticky-bottom navbar-light bg-light top-navbar">
+		<a class="navbar-brand" href="index.html">Установка Java</a>
+		<a class="navbar-brand" href="compile.html">Компиляция</a>
+		<a class="navbar-brand" href="datatypes.html">Типы данных</a>
+		<a class="navbar-brand" href="collections.html">Коллекции</a>
+	</nav>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
