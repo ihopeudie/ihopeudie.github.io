@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Шпаргалки по Java</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div class="container">
+	<nav class="navbar sticky-top navbar-light bg-light top-navbar">
+		<a class="navbar-brand" href="index.html">Установка Java</a>
+		<a class="navbar-brand" href="compile.html">Компиляция</a>
+		<a class="navbar-brand" href="datatypes.html">Типы данных</a>
+		<a class="navbar-brand" href="collections.html">Коллекции</a>
+	</nav>
+
+	<div class="content col-12">
+		<h4>Компиляция класса</h4>
+		<pre><code>javac Main.java</code></pre>
+		<h4>Запуск скомпилированного класса</h4>
+		<pre><code>java Main</code></pre>
+		<h4>Запуск с аргументами</h4>
+		<pre><code>java Main arg0 arg1 arg2</code></pre>
+		<h4>Добавление библиотек в classpath</h4>
+		<pre><code>javac -cp myLib.jar:my2ndLib.jar Main.java</code></pre>
+		<h4>Создание jar файла</h4>
+		<pre><code>jar cf jar-file input-file(s)</code></pre>
+		<pre><code>jar cfm jar-file manifest-addition input-file(s)</code></pre>
+		<pre><code>java -jar JAR-file</code></pre>
+		<h4>Создание jar файла с манифестом и выбором главного класса</h4>
+		<pre><code>jar cfe app.jar MyApp MyApp.class</code></pre>
+
+	</div>
+
+	<nav class="navbar sticky-bottom navbar-light bg-light top-navbar">
+		<a class="navbar-brand" href="index.html">Установка Java</a>
+		<a class="navbar-brand" href="compile.html">Компиляция</a>
+		<a class="navbar-brand" href="datatypes.html">Типы данных</a>
+		<a class="navbar-brand" href="collections.html">Коллекции</a>
+	</nav>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
