@@ -9,17 +9,27 @@
 <body>
 
 <div class="container">
-	<nav class="navbar sticky-top navbar-light bg-light top-navbar">
-		<a class="navbar-brand" href="index.html">Установка Java</a>
-		<a class="navbar-brand" href="compile.html">Компиляция</a>
-		<a class="navbar-brand" href="datatypes.html">Типы данных</a>
-		<a class="navbar-brand" href="collections.html">Коллекции</a>
-	</nav>
+
+	<ul class="nav nav-pills nav-fill top-navbar">
+		<li class="nav-item">
+			<a class="nav-link active" href="index.html">Установка Java</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="compile.html">Компиляция</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="datatypes.html">Типы данных</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="collections.html">Коллекции</a>
+		</li>
+	</ul>
+
 
 	<div class="content col-12">
-		<h4 >Установка Java</h4>
+		<h4>Установка Java</h4>
 		<pre><code>brew install java</code></pre>
-		<h4 >Проверка версии Java</h4>
+		<h4>Проверка версии Java</h4>
 		<pre><code>java --version</code></pre>
 		<h4>Установка SDKMAN</h4>
 		<pre><code>curl -s "https://get.sdkman.io" | bash</code></pre>
@@ -29,15 +39,7 @@
 		<h4>Установка Java через SDKMAN</h4>
 		<pre><code>sdk install java x.y.z-zulu</code></pre>
 	</div>
-
-	<nav class="navbar sticky-bottom navbar-light bg-light top-navbar">
-		<a class="navbar-brand" href="index.html">Установка Java</a>
-		<a class="navbar-brand" href="compile.html">Компиляция</a>
-		<a class="navbar-brand" href="datatypes.html">Типы данных</a>
-		<a class="navbar-brand" href="collections.html">Коллекции</a>
-	</nav>
 </div>
-
 <script src="js/main.js"></script>
 </body>
 </html>

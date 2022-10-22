@@ -9,7 +9,10 @@
 }
 
 .top-navbar {
-    padding: 0 20%;
+    width: 70%;
+    min-width: 400px;
+    margin: 0 auto 0 auto;
+    background-color: white;
 }
 
 code, kbd, pre, samp {
